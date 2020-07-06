@@ -23,8 +23,8 @@ bio_text_omit=
 
 # Cross evaluation's data id
 #cross_data_id_lst=(1)  # for debug
-cross_data_id_lst=(1 2 3 4 5 6 7)  # for snips
-#cross_data_id_lst=(1 2 3 4)  # for ner
+#cross_data_id_lst=(1 2 3 4 5 6 7)  # for snips
+cross_data_id_lst=(1 2 3 4)  # for ner
 
 # ====== train & test setting ======
 #seed_lst=(0)
@@ -133,9 +133,9 @@ transition=learn
 
 
 # ======= default path (for quick distribution) ==========
-bert_base_uncased=/users4/yklai/corpus/BERT/pytorch/uncased_L-12_H-768_A-12/
-bert_base_uncased_vocab=/users4/yklai/corpus/BERT/pytorch/uncased_L-12_H-768_A-12/vocab.txt
-base_data_dir=/users4/yklai/code/Dialogue/FewShot/release/best_data/ # acl20 data
+bert_base_uncased=/root/FewShotTagging/uncased_L-12_H-768_A-12/
+bert_base_uncased_vocab=/root/FewShotTagging/uncased_L-12_H-768_A-12/vocab.txt
+base_data_dir=/root/FewShotTagging/ACL2020data/ # acl20 data
 
 
 echo [START] set jobs on dataset [ ${dataset_lst[@]} ] on gpu [ ${gpu_list} ]
